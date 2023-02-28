@@ -7,8 +7,16 @@
 //E: if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
 //P: loop through and see if modulus === 0, if so add to array, only up to second paramenter. 
 
-
-//notes:
+let findMultiples = function(a,b){
+    let arr = []
+    for(let i = 1; i <= b; i++){
+        if((a*i)%a === 0){
+            arr.push(Number(i))
+        }
+    }   
+    return arr
+}
+//notes: attempt 1 above, not returning a new array with seperate numbers, only returning the last number in the test. 
 
 
 //notes:
