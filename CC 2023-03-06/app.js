@@ -23,4 +23,4 @@ function makeSentence(arr){
 
 // most common answer after submit:
 const smash = words => words.join(' ');
-//no need for edge cases? was arr.toString even doing anything? did I need to account for arr.length === 0 || arr.length === 1?
+//no need for edge cases? was arr.toString even doing anything? did I need to account for arr.length === 0 || arr.length === 1? Seems like examples are too easy. 
