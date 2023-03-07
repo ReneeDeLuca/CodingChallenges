@@ -19,4 +19,8 @@ function makeSentence(arr){
 //   add to a string with spaces in between each element
 //   but not before or after. 
 
-//got it, don't need .toString on longer array, only need to join and give parameter for removing the commas. 
+//got it, don't need .toString on longer array, only need to join and give parameter for removing the commas.
+
+// most common answer after submit:
+const smash = words => words.join(' ');
+//no need for edge cases? was arr.toString even doing anything? did I need to account for arr.length === 0 || arr.length === 1?
