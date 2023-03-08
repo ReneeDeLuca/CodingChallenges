@@ -1,4 +1,4 @@
-// 8kyu Greet Me
+// 7kyu Greet Me
 //Write a method that takes one argument as name and then greets that name, capitalized and ends with an exclamation point.
 
 //P: whether input is lower, upper, or a mix, should return as a proper noun
