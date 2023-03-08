@@ -25,3 +25,12 @@ const squareSum = numArr => {
 console.log(squareSum([1,2,2]),9)
 console.log(squareSum([2,4,4]),36)
 console.log(squareSum([5,18,25]),974)
+
+//revisit:
+//able to write on one line for cleaner code, do not need to do two separate functions
+
+const squareSum2 = numbers => numbers.reduce((total,next)=> total += next*next, 0)
+
+console.log(squareSum2([1,2,2]),9)
+console.log(squareSum2([2,4,4]),36)
+console.log(squareSum2([5,18,25]),974)
