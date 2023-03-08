@@ -47,4 +47,4 @@ let greeting = function capitalize(name) {
 
 const greet = name => 'Hello '+name[0].toUpperCase() + name.slice(1).toLowerCase()+'!'
 
-//works! good job, me. 
+//works! good job, me. Take the string 'name', take the character at index[0] and make it uppercase, the concatinate it to the rest of the string starting at index[1], which is made lower case with toLowerCase. return it in the middle of the strings 'Hello ' and '!'.
