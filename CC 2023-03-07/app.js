@@ -25,7 +25,7 @@
 
 // not familiar with the 'class' portion of the example. going to review Mosh's OOP vod to review his constructor syntax.
 
-function Greeting(name){
+function Person(name){
     this.name = function capitalize(name) {
         return name[0].toUpperCase() + name.slice(1).toLowerCase();
       }
@@ -34,7 +34,7 @@ function Greeting(name){
     }
 }
 
-//ok got this far and I think I'm over complicating this. Constructor is not needed.
+//ok got this far and I think I'm over complicating this. Constructor is not needed and I'm not doing it exactly right.
 
 // try again
 
