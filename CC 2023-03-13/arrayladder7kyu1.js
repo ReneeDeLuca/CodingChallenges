@@ -9,15 +9,29 @@
 //The returned word should be all lowercase letters. if you can't find one of the letters using the index numbers, return "No mission today". Jenny would be very sad, but that's life... :(
 
 
-//P:
-//R:
+//P: spaces don't count, need to remove, need to include response if it doesn't work
+//R: return word made (lowercase) or "no mission today"
 //E: input: [5, 0, 3], "I Love You" output: "ivy" (0 = "i", 3 = "v", 5 = "y")
-//P:
+//P: string: remove spaces, split, push appropriate index to new array, .join().toLowerCase(). 
 
+function missingWord(nums, str) {
+    let noSpaceStr = str.replaceAll(" ","")
+    let strArray = Array.from(noSpaceStr)
+    function compareNumbers(a, b) {
+        return a - b;
+      }
+    nums.sort(compareNumbers)
+    let secretWord = [strArray[nums[0]],strArray[nums[1]],strArray[nums[2]]]
+    secretWord = secretWord.join("").toLowerCase()
+    if(!(secretWord.length === 3)){
+        return "No mission today"
+    }else{
+        return secretWord
+    }
+ }
 
-//notes:
-
-
-//notes:
 
 //test:
+console.log(missingWord([5, 0, 3], "I love you"), "ivy")
+console.log(missingWord([29, 31, 8], "The quick brown fox jumps over the lazy dog"), "bay")
+console.log(missingWord([12, 4, 6], "Good Morning"), "No mission today")
