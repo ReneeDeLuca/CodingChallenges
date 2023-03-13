@@ -4,15 +4,23 @@
 
 //As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
 
-//P:
-//R:
-//E:
-//P:
+//P: no negative numbers, there are monkeys (at least 1), can't be non-integer (can't have half a monkey)
+//R: array with all numbers 1-n
+//E: 6 monkeys, 10 monkeys, 57 monkeys
+//P: loop up to n, push i to array, return array
+
+const countMonkeys = n => {
+    let monkeyArray = []
+    for(i=1; i<=n ; i++){
+        monkeyArray.push(i)
+    }
+    return monkeyArray
+}
 
 
-//notes:
-
-
-//notes:
+//notes: easy peasy < 5 min
 
 //test:
+console.log(countMonkeys(6))
+console.log(countMonkeys(10))
+console.log(countMonkeys(57))
