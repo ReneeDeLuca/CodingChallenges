@@ -12,14 +12,15 @@
 function wave(str){
     let waveArray = []
     for(i=0; i<str.length; i++){
-        if(i > str.length-1){
+    //     if(i > str.length-1){
             
-        else{
+    //     else{
             
-        }
+    //     }
        
-    }
+    // }
     return waveArray
+}
 }
 
 //notes: cannot figure out what to do, checked arrays and strings and regex on MDN, not becoming clearer. google search resulted in:
